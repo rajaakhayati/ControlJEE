@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="template1">
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+        .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+        .fa-anchor,.fa-coffee {font-size:200px}
+    </style>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<div layout:fragment="content1">
+
+
+
+    <!-- Header -->
+    <header class="w3-container w3-black w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">CareZone</h1>
+        <p class="w3-xlarge">Gérez votre santé, sans maux de tête.</p>
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"></button>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 class="w3-center w3-text-grey">Nos missions</h1>
+                <hr>
+                <h5>Notre équipe de médecins prend en charge des patients aux symptômes très variés : fièvre,
+                    douleur, toux, gêne respiratoire, etc..
+                    Toutes les demandes de visites transitent par notre plateau de régulation médicalisé avec un médecin régulateur
+                    présent 24h/24. Les appels complexes lui sont confiés systématiquement.</h5>
+                    <h5>fin d'assurer une prise en charge globale et optimale, nous travaillons avec des laboratoires d'analyses ,
+                    des centres de radiologie, des correspondants spécialistes, libéraux et hospitaliers ainsi que des réseaux de soins.
+                    Nos médecins sont équipés de matériel diagnostique (Electrocardiogramme, oxymètre de pouls, bandelettes urinaires, ...)
+                    et thérapeutique (matériel de suture, médicaments injectables, ...)</h5>
+
+                <p class="w3-text-grey"></p>
+            </div>
+
+            <div class="w3-third w3-center">
+                <i class="fa fa-anchor w3-padding-64 w3-text-green"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <i class="fas fa-user-md w3-padding-64 w3-text-red w3-margin-right" style='font-size:168px;color:red'></i>
+            </div>
+
+            <div class="w3-twothird">
+                <h1 class="w3-center w3-text-grey">Nos médecins</h1>
+                <h5 class="w3-padding-32">Les Urgences Médicales de Paris sont composées de 42 médecins associés et d'un nombre variables de médecins collaborateurs et remplaçants ayant une expérience de l'urgence, mais également de la médecine générale et de la pédiatrie.
+                    Pour la plupart, nous exerçons également en milieu hospitalier (SAMU, Urgences hospitalières, Urgences pédiatriques...).
+                    Nous assurons des soins en continuité avec votre médecin traitant, en respectant son schéma thérapeutique et en vous donnant un compte rendu d'intervention lui étant destiné.
+
+                    </h5>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-54">
+        <h1 class="w3-margin w3-xlarge">24 heures/24</h1>
+
+        <h1 class="w3-margin w3-xlarge">7 jours sur 7</h1>
+
+        <h1 class="w3-margin w3-xlarge">365 jours par an</h1>
+    </div>
+
+    <!-- Footer -->
+
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+
+
+
+</div>
+</body>
+</html>
